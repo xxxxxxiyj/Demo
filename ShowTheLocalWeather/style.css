@@ -1,0 +1,62 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-image:url('images/bg.jpg');
+	background-size:cover;
+	position:relative;
+}
+.wrap{
+	max-width:600px;
+	margin:0 auto;
+	text-align:center;
+}
+h1,#city,#weather_temp{
+	color:#1c5889;
+}
+#city{
+	font-size:24px;
+	margin-bottom:20px;
+}
+#weather_temp{
+	font-size:22px;
+}
+
+.today{
+	width:100%;
+	margin:50px auto;
+	overflow:auto;
+}
+.today-item,
+.dressing{
+	background-color:rgba(255,255,255,0.6);
+	color:#4574a2;
+	border-radius:5px;
+	box-shadow:0 0 8px #1c4e71;
+}
+.today-item{
+	float:left;
+	display:table-cell;
+	width:162px;
+	height:80px;
+	line-height:80px;
+	font-size:18px;
+	font-weight:600;
+}
+.uv{
+	margin:0 50px;
+}
+.dressing{
+	width:100%;
+	text-align:left;
+	padding:5px;
+}
+.date{
+	position:absolute;
+	top:5px;
+	right:20px;
+	color:#fff;
+	font-size:18px;
+	font-weight:600;
+	line-height:2em;
+}

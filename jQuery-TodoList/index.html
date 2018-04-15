@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	TodoList </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div id="todoList">
+		<div class="todoList-header">
+			<h2>待办事项</h2>
+			<div class="todoList-operation">
+				<input type="text" id="add-task-input" palceholder="任务名称">
+				<button id="js-add-task">添加任务</button>
+			</div>
+		</div>
+
+		<ul class="todoList-content">
+			<li class="task">
+				<p class="text">完成学习任务</p>
+				<span class="close">x</span>
+			</li>
+		</ul>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

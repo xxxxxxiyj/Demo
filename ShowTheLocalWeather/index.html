@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<title>Show the Local Weather</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1>Local Weather</h1>
+		<div id="city">河南·焦作</div>
+		<div id="weather_temp"></div>
+		<div class="row today">
+			<div class="humidity today-item"></div>
+			<div class="uv today-item"></div>
+			<div class="travel today-item"></div>
+		</div>
+		<div class="dressing">
+			穿衣建议：
+			<p class="dressing_advice"></p>
+		</div>
+		<div class="date"></div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
