@@ -1,0 +1,19 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "TodoList",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[B\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C"
+  },
+  "author": "yohaha",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.0"
+  }
+}

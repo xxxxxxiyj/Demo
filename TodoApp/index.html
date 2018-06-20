@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	Todo App</title>
+	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="header">
+		<span>Todo List</span>
+	</div>
+
+	<div class = "container">
+
+		<div class="todoList-header">
+			<input type=text id="add-task-input">
+			<button id="add-task">Add</button>
+		</div>
+
+		<div class="todoList-content">
+			<h3>未完成</h3>
+			<div class="todoList-item">
+				<span class="completed"></span>
+				<span class="item-content">item content 1</span>
+				<span class="delete"></span>
+				<span class="details"></span>
+			</div>
+
+		</div>
+
+
+		<div class="todoList-completed">
+			<h3>已完成</h3>
+			<div class="todoList-item">
+				<span class="uncompleted"></span>
+				<span class="item-content">item content 1</span>
+				<span class="delete"></span>
+				<span class="details"></span>
+			</div>
+
+		</div>
+
+		<div class="task-detail">
+			<div class="content">好好学习</div>
+			<textarea class="desc"></textarea>
+			<div class="remind">
+				<h4>提醒时间</h4>
+				<input type="date">
+				<button>Update</button>
+			</div>
+		</div>
+
+		<div class="task-detail-mask"></div>
+	</div>
+
+	
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

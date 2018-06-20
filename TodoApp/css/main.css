@@ -1,0 +1,181 @@
+*{
+	/*background-color: rgba(0, 0, 0, .1);*/
+	box-sizing:border-box;
+}
+body{
+	background-color:#efefef;
+	position:relative;
+	font-size:16px;
+}
+input,
+button,
+.todoList-item{
+	border:0;
+	border-radius:3px;
+	padding:8px;
+}
+input[type="text"]{
+	width:85%;
+	outline:0;
+	height:40px;
+	line-height:30px;
+}
+input[type="text"]:focus{
+	border:1px solid #ffb6b9;
+	box-shadow: 0 0 5px #ffb6b9;
+}
+button{
+	background-color:#ffb6b9;
+	color:#fff;
+	width:14%;
+	height:40px;
+	cursor:pointer;
+}
+.header{
+	width:100%;
+	background-color:#ffb6b9;
+	color:#fff;
+	height:65px;
+	line-height:65px;
+	text-align:center;
+	font-size:28px;
+}
+.container{
+	max-width:700px;
+	margin:30px auto;
+	position:relative;
+}
+.container > *{
+	width:100%;
+}
+.todoList-header{
+	margin-bottom:10px;
+}
+
+.todoList-item{
+	background-color:#fff;
+	padding:15px;
+	border:1px solid #d3d3d3;
+	position:relative;
+}
+.todoList-item .item-content{
+	padding-left:38px;
+}
+/*
+// 伪类实现内容前的对勾
+.todoList-content .todoList-item .item-content:before,
+.todoList-completed .todoList-item .item-content:before{
+	content:'';
+	width:7px;
+	height:18px;
+	border-width:0 5px 5px 0;
+	border-style:solid;
+	position:absolute;
+	top:10px;
+	left:22px;
+	transform:rotate(45deg);
+	cursor:pointer;
+	transition:border-color 0.3s;
+}
+.todoList-content .todoList-item .item-content:before,
+.todoList-completed .todoList-item .item-content:hover:before{
+	border-color:#999;
+}
+.todoList-completed .todoList-item .item-content:before,
+.todoList-content .todoList-item .item-content:hover:before{
+	border-color:#61c0bf;
+}*/
+.todoList-item .completed,
+.todoList-item .uncompleted,
+.todoList-item .delete,
+.todoList-item .details{
+	cursor:pointer;
+	display:inline-block;
+	background-size:cover;
+	position:absolute;
+}
+.todoList-item .completed{
+	background-image:url('../images/confirm.png');
+	width:30px;
+	height:30px;	
+	top:10px;
+}
+.todoList-item .completed:hover{
+	background-image: url('../images/confirm_hover.png');
+}
+.todoList-item .uncompleted{
+	background-image:url('../images/confirm_hover.png');
+	width:30px;
+	height:30px;	
+	top:10px;
+}
+.todoList-item .uncompleted:hover{
+	background-image: url('../images/confirm.png');
+}
+.todoList-item .delete{
+	right:45px;
+	top:9px;
+	width:30px;
+	height:30px;
+	background-image:url('../images/delete.png');
+}
+.todoList-item .delete:hover{
+	background-image:url('../images/delete_hover.png');
+}
+.todoList-item .details{
+	width:30px;
+	height:6px;
+	background-image:url('../images/details.png');
+	right:13px;
+	top:23px;
+}
+.todoList-item .details:hover{
+	background-image:url('../images/details_hover.png');
+}
+
+.todoList-completed{
+	margin-top:80px;
+}
+
+.task-detail{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:50%;
+	background-color:#fff;
+	padding:10px;
+	z-index: 1;
+	display:none;
+}
+.task-detail .content{
+	margin:5px;
+	font-size:16px;
+	font-weight:700;
+}
+.task-detail .desc{
+	width:100%;
+	border-radius:3px;
+	margin:10px auto;
+	resize:none;
+}
+.task-detail button{
+	width:30%;
+}
+.task-detail h4{
+	margin:0;
+}
+.task-detail input{
+	border:1px solid #ccc;
+	width:100%;
+	margin:10px auto;
+}
+.task-detail-mask{
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background-color:rgba(30, 30, 30, 0.6);
+	display:none;
+}
+
